@@ -1,5 +1,6 @@
 package com.ll.framework.ioc;
 
+import com.ll.framework.ioc.annotations.Component;
 import com.ll.standard.util.Ut;
 import org.reflections.Reflections;
 import org.reflections.scanners.Scanners;
