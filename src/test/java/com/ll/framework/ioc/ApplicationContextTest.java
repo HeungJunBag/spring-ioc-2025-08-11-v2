@@ -21,8 +21,14 @@ public class ApplicationContextTest {
     @Test
     @DisplayName("ApplicationContext 객체 생성")
     public void t1() {
-        System.out.println(applicationContext);
+        System.out.println(applicationContext); // null이 아닌 객체 주소 출력
     }
+    /*
+    * t1 : ApplicationContext 객체 생성
+    * Red -> 이미 통과
+    * 생성자와 init()이 비어있어도 호출 자체는 문제없이 실행된다.
+    * new ApplicationContext(...)가 성공했다면 applicationContext 변수에 객체 주소가 담기므로 출력도 정상
+    * */
 
     @Test
     @DisplayName("testPostService 빈 얻기")
