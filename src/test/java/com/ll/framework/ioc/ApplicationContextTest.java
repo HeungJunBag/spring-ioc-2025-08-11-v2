@@ -36,8 +36,12 @@ public class ApplicationContextTest {
         TestPostService testPostService = applicationContext
                 .genBean("testPostService");
 
-        assertThat(testPostService).isNotNull();
+        assertThat(testPostService).isNotNull(); // null이 아니어야 한다.
     }
+    /*
+    * t2 : testPostService 빈 얻기
+    *
+    * */
 
     @Test
     @DisplayName("testPostService 빈을 다시 얻기, 싱글톤이어야 함")
